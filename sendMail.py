@@ -118,10 +118,9 @@ if __name__ == '__main__':
     list = isDatabaseUserExpiry()
     from_addr = 'qq@qq.com'   # 邮箱登录用户名
     password = 'test'              # 登录密码
-    to_addr = ['qq@qq.com', 'qq@qq.com']
-
-    contexts = ''
-      # 发送对象地址，可以多个邮箱
+    to_addr = ['qq1@qq.com', 'qq2@qq.com']
+    # 发送对象地址，可以多个邮箱
+    contexts = ''   
     smtp_server = "smtp.exmail.qq.com"          # 服务器地址，默认端口号25
     if list != [] and list != None:
         for dsUser in list:
